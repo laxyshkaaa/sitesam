@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Административная панель</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<header class="header">
+    <div class = "search">
+        <div class="logo"></div>
+        
+            <input type = "search" id = "search-input" placeholder="Поиск по сайту">
+        
+    </div>
+</header>
+
+<section>
+    <div class = "title">
+        <h2>Сотрудники</h2>
+    </div>
+    <div class = "locate" id = "employees"></div>
+</section>
+
+<section>
+    <div class = "title">
+        <h2>Календарь</h2>
+    </div>
+    <div class = "main-grid">
+        <div class = "left-column">
+            <section id = "calendar" class = calendar></section>
+            <div class = "event">
+                <h2 class = "title">События</h2>
+                <div class = "event-cards" id = "events"></div>
+            </div>
+        </div>
+        <div class = "right-column">
+            <div class = "news">
+                <h2 class = "title">Новости</h2>
+             <div class = "news-cards" id = "news"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script src="qrcode.js"></script>
+</body>
+</html>
