@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "f33c0cd2-fdc3-48aa-8600-118a8c4aa9ee",
+		"name": "apiWEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40460423"
+	},
+	"item": [
+		{
+			"name": "getEvents",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getNews",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployees",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
