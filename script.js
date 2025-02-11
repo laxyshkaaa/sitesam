@@ -15,12 +15,17 @@ async function loadData(url, containerId, createCard) {
 function createEmployeeCard(employee){
     const card = document.createElement('div')
     card.className = 'carts'
-    card.innerHTML = `<h1>${employee.last_name} ${employee.first_name} ${employee.patronymic}</h1>
+    card.innerHTML = `<h1>${employee.last_name} ${employee.first_name} ${
+			employee.patronymic
+		}</h1>
     <p>${employee.post}</p>
     <p>${employee.work_phone}</p>
     <p>${employee.corporative_email}</p>
-	 <p>${new Date(employee.birth_date).toLocaleString('ru-RU',{day : 'numeric', month : 'long'})}</p>
-    <button class = "qr-code-button">Показать qr-code</button>`
+	 <p>${new Date(employee.birth_date).toLocaleString('ru-RU', {
+			day: 'numeric',
+			month: 'long',
+		})}</p>
+    <button class = "qr-code-button">&#128190</button>`
 
     card.querySelector('.qr-code-button').addEventListener('click', () => createQRCode(employee))
     return card
